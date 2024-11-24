@@ -1,0 +1,172 @@
+/*   === Projects Section Styling Starts ===   */
+section.projects {
+  width: 100%;
+  padding-left: 10px;
+}
+
+.projects-post {
+  transition: transform 0.3s;
+}
+
+.projects-post:hover {
+  transform: translateY(-5px);
+}
+
+.projects .section-heading {
+  position: relative;
+}
+
+.projects .section-heading {
+  margin-bottom: 25px;
+  font-size: 20px;
+  max-width: 100%;
+  padding: 10px 26px;
+}
+
+.projects .section-heading .projects-btn {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 10px 26px;
+  border-radius: 5px;
+}
+
+.projects .projects-contents {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  padding-bottom: 3%;
+}
+
+.projects-contents .projects-post {
+  position: relative;
+  padding: 15px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.projects-contents .projects-post img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  padding: auto;
+}
+
+#projectborder {
+  border: 2px solid white;
+}
+
+.projects-post .post-desc h1 {
+  margin-bottom: 8px;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.projects-post .post-desc p {
+  margin: 2px;
+  color: var(--text-clr);
+  line-height: 1.3;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.projects-contents .projects-post .post-footer {
+  position: absolute;
+  bottom: 0;
+  padding: 15px 0px;
+}
+
+.projects-post .post-footer i {
+  font-size: 14px;
+}
+
+/* CTA Section Styling */
+.CTA {
+  margin: 20px 10px;
+  padding: 20px;
+  max-width: 800px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 80px 20px;
+  background-color: #dbc7b1;
+  color: #c46c4f;
+  border-radius: 8px;
+}
+
+.CTA p {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.CTA h1 {
+  font-size: 36px;
+  margin: 20px 0;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+/* Styling the Button */
+.CTA-btn {
+  background-color: #b7a99a;
+  color: black;
+  padding: 12px 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.CTA-btn:hover {
+  background-color: none;
+}
+
+.CTA-btn:focus {
+  outline: none;
+}
+
+.CTA-btn:active {
+  transform: scale(0.98);
+}
+
+
+
+.btn {
+  background-color: #b29da4;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  background-color: #af6b82;
+  transform: scale(1.1);
+  color: #fff;
+}
+
+.projects-btn {
+  font-size: 1.2em;
+  padding: 12px 25px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.projects-section h1 {
+  font-size: 1em; 
+  color: #213555; 
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}

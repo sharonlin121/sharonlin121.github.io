@@ -1,0 +1,515 @@
+html {
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: #f0e6de;
+	margin-top: 70px;
+	padding: 0;
+}
+
+/*style navbar start*/
+.navbar {
+	background-color: #d1bfc5;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* Align items vertically */
+	padding: 10px 20px;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: 99;
+}
+
+.logo {
+	margin-right: 30px
+}
+
+.logo img {
+	height: 60px;
+	width: 120px;
+}
+
+
+.nav-list {
+	font-size: 19px;
+	list-style: none;
+	display: flex;
+	/* Arrange items in a row */
+	gap: 10px;
+	/* Even spacing between items */
+	margin: 0;
+	padding: 2px 2px;
+}
+
+.nav-list li a {
+	text-decoration: none;
+	color: #2173a6;
+	font-weight: bold;
+	padding: 10px 15px;
+	border-radius: 5px;
+}
+
+.nav-list li a:hover {
+	background-color: #b29da4;
+	color: #fff;
+}
+
+
+.nav-btn {
+
+	color: rgb(8, 3, 3);
+	padding: 10px;
+	border-radius: 50px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.contact-button {
+	background-color: #b29da4;
+	padding: 10px 20px;
+	border-radius: 50px;
+	font-weight: bold;
+	text-align: center;
+	transition: all 0.3s ease;
+}
+
+
+.contact-button:hover {
+	color: #f4f2f2;
+	transform: scale(1.1);
+	/* Slightly enlarge the button on hover */
+}
+
+/*style navbar end*/
+
+
+/*style mypic part start*/
+
+.mypic-text {
+	max-width: 600px;
+	/* Set a max width for proper wrapping */
+	margin: auto;
+	/* Center content horizontally */
+	text-align: left;
+	/* Align text to the left for readability */
+	line-height: 1.6;
+	/* Adjust line spacing for better readability */
+	word-wrap: break-word;
+	/* Ensure long words break properly */
+	padding: 10px 20px;
+	/* Add padding for spacing */
+}
+
+.mypic-text h1 {
+	font-size: 2.5em;
+	/* Emphasize your name */
+	margin-bottom: 10px;
+	/* Add space below */
+	color: #333;
+	/* Dark text color */
+}
+
+.mypic-text h3 {
+	font-size: 1.5em;
+	margin-bottom: 5px;
+	color: #666;
+}
+
+.mypic-type-container {
+	display: flex;
+	align-items: baseline;
+	gap: 5px;
+	flex-wrap: wrap;
+}
+
+.mypic-type-text.text1 {
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #898b78;
+}
+
+.mypic-type-text.text2 {
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #af6b82;
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+
+}
+
+.mypic-text p {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	font-size: 1em;
+	color: #444;
+}
+
+.download-button {
+	display: inline-block;
+	padding: 10px 15px;
+	background-color: #898b78;
+	color: #fff;
+	font-weight: bold;
+	border-radius: 5px;
+	text-decoration: none;
+	transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.download-button:hover {
+	background-color: #b29da4;
+	transform: scale(1.1);
+}
+
+.mypic-text {
+	max-width: 600px;
+	margin: auto;
+	text-align: left;
+	line-height: 1.6;
+	word-wrap: break-word;
+	padding: 10px 20px;
+}
+
+.mypic-text h1 {
+	font-size: 2.5em;
+	margin-bottom: 10px;
+	color: #333;
+}
+
+.mypic-text h3 {
+	font-size: 1.5em;
+	margin-bottom: 5px;
+	color: #666;
+}
+
+.mypic-type-container {
+	display: flex;
+	align-items: baseline;
+	gap: 5px;
+	flex-wrap: wrap;
+}
+
+.mypic-type-text.text1 {
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #898b78;
+}
+
+.mypic-type-text.text2 {
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #b29da4;
+}
+
+.mypic-text p {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	font-size: 1em;
+	color: #444;
+}
+
+.download-button {
+	display: inline-block;
+	padding: 10px 15px;
+	background-color: #898b78;
+	color: #fff;
+	font-weight: bold;
+	border-radius: 5px;
+	text-decoration: none;
+	transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.download-button:hover {
+	background-color: #b29da4;
+	transform: scale(1.1);
+}
+
+
+.mypic {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 10px;
+	padding: 20px;
+	background-color: #f0e6de;
+	border-radius: 10px;
+	padding-top: 60px;
+
+}
+
+.mypic-text {
+	max-width: 20%;
+	/* Limit text width */
+}
+
+.mypic-text h3,
+.mypic-text h1 {
+	margin: 0;
+	color: #333;
+}
+
+.mypic-type-container {
+	display: flex;
+	gap: 10px;
+}
+
+.mypic-text {
+	padding-left: 40px;
+	max-width: 60%;
+	color: #333;
+	font-family: 'Arial', sans-serif;
+	text-align: left;
+}
+
+.mypic-text h1 {
+	font-size: 2.5em;
+	margin-bottom: 10px;
+	color: #333;
+}
+
+.mypic-text h3 {
+	font-size: 1.5rem;
+	color: #777;
+	font-weight: normal;
+}
+
+.mypic-text h1 {
+	font-size: 3rem;
+	color: #333;
+	font-weight: bold;
+}
+
+.mypic-type-container {
+	display: flex;
+	gap: 10px;
+	margin-top: 10px;
+	/* Add spacing between "I'm a" and "Business Analyst" */
+}
+
+.mypic-type-text {
+	font-size: 1.5rem;
+	/* Set a base font size */
+	font-weight: bold;
+	color: #898b78;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	transition: color 0.3s ease;
+}
+
+
+.mypic-text p {
+	margin-top: 15px;
+	font-size: 1.1rem;
+	color: #555;
+	line-height: 1.6;
+}
+
+/*style download-button start*/
+
+.download-button {
+	display: inline-block;
+	margin-top: 20px;
+	padding: 13px 20px;
+	background-color: #aeb09b;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 5px;
+	font-weight: bold;
+	transition: all 0.3s ease;
+}
+
+.download-button:hover {
+	background-color: #f1f1f1;
+	color: black;
+	transform: scale(1.1);
+}
+
+/*style download-button end*/
+
+.mypic-img {
+	max-width: 40%;
+}
+
+.mypic-img img {
+	width: 100%;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/*style mypic part end*/
+
+/*style footer start*/
+.page-footer {
+	background-color: #d1bfc5;
+	color: #030202;
+	text-align: center;
+	padding: 10px 0;
+	width: 100vw;
+	position: absolute;
+	left: 0;
+	right: 0;
+
+}
+
+.page-footer p {
+	margin: 0;
+	font-size: 14px;
+}
+
+/*style footer end*/
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+	.contact-item {
+		flex: 1 1 100%;
+		/* Full width on smaller screens */
+	}
+
+	.section-heading h1 {
+		font-size: 1.8em;
+	}
+}
+
+
+
+
+.contact-item .icon {
+	font-size: 2em;
+	color: #b29da4;
+	margin-right: 15px;
+}
+
+.contact-text span:first-child {
+	display: block;
+	font-size: 1em;
+	font-weight: bold;
+	color: #213555;
+	margin-bottom: 5px;
+}
+
+.contact-text span:last-child {
+	font-size: 1em;
+	color: #666;
+}
+
+.contact-text a {
+	text-decoration: none;
+	color: #213555;
+	font-weight: bold;
+	transition: color 0.3s ease;
+}
+
+.contact-text a:hover {
+	color: #b29da4;
+}
+
+.contact {
+	background-color: #f0e6de;
+	padding: 50px 20px;
+	text-align: center;
+	border-top: 2px solid #b29da4;
+	margin: 0px;
+}
+
+.section-heading h1 {
+	font-size: 1.5em;
+	color: #213555;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+
+.skills-contents {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 20px;
+	margin-top: 50px;
+	animation: fadeInUp 1.2s ease-in-out;
+}
+
+.contact-details {
+	display: flex;
+}
+
+.contact-contents {
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+	flex-wrap: wrap;
+	max-width: 1000px;
+	margin: 0 auto;
+	flex-wrap: nowrap;
+}
+
+.contact-item {
+	display: flex;
+	align-items: center;
+	background: #fff;
+	padding: 15px 20px;
+	border-radius: 10px;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+	flex: 1 1 calc(33.333% - 40px);
+	min-width: 250px;
+	max-width: 300px;
+	margin: 10px;
+}
+
+
+.contact-text span:first-child {
+	display: block;
+	font-size: 1em;
+	font-weight: bold;
+	color: #213555;
+	margin-bottom: 5px;
+}
+
+.contact-text span:last-child {
+	font-size: 1em;
+	color: #666;
+}
+
+.contact-text a {
+	text-decoration: none;
+	color: #213555;
+	font-weight: bold;
+	transition: color 0.3s ease;
+}
+
+.contact-text a:hover {
+	color: #b29da4;
+}
+
+@media (max-width: 768px) {
+	.contact-item {
+		flex: 1 1 100%;
+	}
+
+	.section-heading h1 {
+		font-size: 2em;
+	}
+}
+
+
+
+.contact .section-heading h1 i {
+	color: #af6b82;
+	margin-right: 10px;
+}
+
+.contact-item .icon i {
+	font-size: 2em;
+	color: #b29da4;
+	margin-right: 15px;
+}
+
+.contact-item .icon i {
+	font-size: 1.3em;
+	/* Reduce the size of the icons */
+	color: #b29da4;
+	margin-right: 10px;
+}
+
+/* get in touch section end*/

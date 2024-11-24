@@ -1,0 +1,70 @@
+.education {
+  background-color: #f0e6de;
+  padding: 50px 20px;
+  text-align: center;
+  border-top: 2px solid #b29da4;
+  border-bottom: 2px solid #b29da4;
+
+}
+
+
+.projects-section h1 {
+  font-size: 1em; 
+  color: #213555; 
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+.education-contents {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.education-box {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1 1 300px;
+  max-width: 400px;
+  margin: 15px;
+}
+
+.education-box h2 {
+  font-size: 1.8em;
+  color: #213555;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.education-box h3 {
+  font-size: 1.2em;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.education-box h3:last-child {
+  font-weight: bold;
+  color: #af6b82;
+}
+
+@media (max-width: 768px) {
+  .education-contents {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .education-box {
+    max-width: 90%;
+  }
+
+  .education-box h2 {
+    font-size: 1.5em;
+  }
+}
