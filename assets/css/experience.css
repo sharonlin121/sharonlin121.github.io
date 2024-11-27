@@ -1,97 +1,116 @@
 .experience {
   background-color: #f0e6de;
-  padding: 60px 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border-bottom: 2px solid #b29da4;
-
-}
-
-.experience h1 {
-  font-size: 2.2em; /* Smaller font size for the section title */
-  color: #213555;
+  padding: 30px 20px;
   text-align: center;
-  margin-bottom: 40px;
 }
 
-.experience-contents {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-}
-
-.experience-box {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  margin-bottom: 50px;
-  padding: 25px;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-  width: 90%;
-  max-width: 900px;
-  min-height: 180px;
-}
-
-.company-logo {
-  display: flex;
-  align-items: center;
-  margin-right: 30px;
-}
-
-.company-logo i {
-  font-size: 2em; /* Smaller icon size */
-  margin-right: 15px;
-  color: #af6b82;
-}
-
-.company-logo img {
-  width: 80px; /* Larger logo image size */
-  height: auto;
-}
-
-h2 {
-  font-size: 1.4em; /* Smaller font size for job title */
+.section-heading h1 {
+  font-size: 2.8em;
+  font-family: 'Poppins', sans-serif;
   color: #213555;
   font-weight: bold;
-  margin-bottom: 8px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  position: relative;
 }
 
-.year {
-  font-size: 1em; /* Even smaller font size for the year */
+.section-heading h1:after {
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 5px;
+  background-color: #af6b82;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+}
+
+/* Timeline section styles */
+.timeline {
+  position: relative;
+  margin: 50px 0;
+  padding-left: 80px;
+  padding-right: 70px;
+
+}
+
+.timeline:before {
+  content: '';
+  position: absolute;
+  left: 77px;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background-color: #af6b82;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+  padding-left: 125px;
+  padding-right: 0px;
+}
+
+
+.timeline-content {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.timeline-content h2 {
+  font-size: 1.5em;
+  color: #213555;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.timeline-content .year {
+  font-size: 1em;
   color: #af6b82;
-  display: block; /* Moves the year to the next line */
-  margin-top: 5px;
+  margin-bottom: 10px;
+  display: block;
 }
 
-p {
+.timeline-content p {
   font-size: 1.1em;
   color: #555;
   line-height: 1.6;
-  margin-top: 10px;
+}
+
+.timeline-icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 110px; /* Increased size */
+  height: 110px; /* Increased size */
+  background-color: #fff;
+  border: 3px solid #af6b82; /* Slightly thicker border */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-icon img {
+  width: 55px; 
+  height: auto;
 }
 
 @media (max-width: 768px) {
-  .experience h1 {
-    font-size: 2.2em;
+  .timeline:before {
+    left: 10px;
   }
 
-  .experience-box {
-    flex-direction: column;
-    align-items: center;
-    width: 95%;
-    padding: 20px;
+  .timeline-item {
+    padding-left: 40px;
   }
 
-  .company-logo i {
-    font-size: 1.8em;
-  }
-
-  .company-logo img {
-    width: 70px;
+  .timeline-icon {
+    left: -10px;
   }
 }

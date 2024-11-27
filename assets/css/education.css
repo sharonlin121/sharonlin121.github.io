@@ -1,19 +1,7 @@
 .education {
   background-color: #f0e6de;
-  padding: 50px 20px;
+  padding: 30px 20px;
   text-align: center;
-  border-top: 2px solid #b29da4;
-  border-bottom: 2px solid #b29da4;
-
-}
-
-
-.projects-section h1 {
-  font-size: 1em; 
-  color: #213555; 
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 20px;
 }
 
 
@@ -66,5 +54,89 @@
 
   .education-box h2 {
     font-size: 1.5em;
+  }
+}
+
+.certifications {
+  background: #f0e6de;
+  padding: 70px 30px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.section-heading h1 {
+  font-size: 2.8em;
+  font-family: 'Poppins', sans-serif;
+  color: #213555;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.section-heading h1:after {
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 5px;
+  background-color: #af6b82;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+}
+
+
+.certifications-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.certification-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #ffffff;
+  padding: 20px 25px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  max-width: 700px;
+  width: 90%;
+  text-align: left;
+}
+
+.certification-item img {
+  width: 80px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.certification-item h3 {
+  font-size: 1.4em;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+}
+
+
+@media (max-width: 768px) {
+  .section-heading h1 {
+    font-size: 2.2em;
+  }
+
+  .certification-item {
+    padding: 15px 20px;
+    gap: 15px;
+  }
+
+  .certification-item img {
+    width: 60px;
+  }
+
+  .certification-item h3 {
+    font-size: 1.2em;
   }
 }

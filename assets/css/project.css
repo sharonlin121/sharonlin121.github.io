@@ -1,4 +1,9 @@
-/*   === Projects Section Styling Starts ===   */
+.projects {
+  background-color: #f0e6de;
+  padding: 30px 20px;
+  text-align: center;
+}
+
 section.projects {
   width: 100%;
   padding-left: 10px;
@@ -12,22 +17,25 @@ section.projects {
   transform: translateY(-5px);
 }
 
-.projects .section-heading {
+.section-heading h1 {
+  font-size: 2.8em;
+  font-family: 'Poppins', sans-serif;
+  color: #213555;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 50px;
   position: relative;
 }
 
-.projects .section-heading {
-  margin-bottom: 25px;
-  font-size: 20px;
-  max-width: 100%;
-  padding: 10px 26px;
-}
-
-.projects .section-heading .projects-btn {
+.section-heading h1:after {
+  content: '';
   position: absolute;
-  right: 0;
-  bottom: 0;
-  padding: 10px 26px;
+  width: 60px;
+  height: 5px;
+  background-color: #af6b82;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
   border-radius: 5px;
 }
 
@@ -37,6 +45,7 @@ section.projects {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
   padding-bottom: 3%;
+  padding-top: 3%;
 }
 
 .projects-contents .projects-post {
@@ -161,12 +170,4 @@ section.projects {
   font-size: 1.2em;
   padding: 12px 25px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.projects-section h1 {
-  font-size: 1em; 
-  color: #213555; 
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 20px;
 }
