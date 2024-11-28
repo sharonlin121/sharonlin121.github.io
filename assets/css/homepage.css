@@ -474,17 +474,6 @@ body {
 	color: #b29da4;
 }
 
-@media (max-width: 768px) {
-	.contact-item {
-		flex: 1 1 100%;
-	}
-
-	.section-heading h1 {
-		font-size: 2em;
-	}
-}
-
-
 
 .contact .section-heading h1 i {
 	color: #af6b82;
@@ -505,3 +494,42 @@ body {
 }
 
 /* get in touch section end*/
+
+/*responsive*/
+@media (max-width: 768px) {
+	.contact-item {
+		flex: 1 1 100%;
+	}
+
+	.section-heading h1 {
+		font-size: 2em;
+	}
+}
+
+@media (max-width: 768px) {
+	.nav-list {
+			flex-direction: column;
+			display: none;
+			background-color: #d1bfc5;
+			position: absolute;
+			top: 100%;
+			left: 0;
+			right: 0;
+			z-index: 100;
+	}
+
+	.nav-list.active {
+			display: flex;
+	}
+
+	.hamburger {
+			display: block;
+			cursor: pointer;
+			font-size: 2rem;
+			color: #2173a6;
+	}
+}
+
+.hamburger {
+	display: none; /* Hidden by default */
+}

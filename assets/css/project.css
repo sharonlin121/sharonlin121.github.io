@@ -1,12 +1,14 @@
 .projects {
   background-color: #f0e6de;
-  padding: 30px 20px;
+  padding: 30px 50px;
   text-align: center;
 }
 
 section.projects {
   width: 100%;
   padding-left: 10px;
+  padding-bottom: 18%;
+
 }
 
 .projects-post {
@@ -170,4 +172,74 @@ section.projects {
   font-size: 1.2em;
   padding: 12px 25px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Base Styles - Desktop View */
+.projects .projects-contents {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  padding: 3% 0;
+}
+
+/* Tablet View */
+@media screen and (max-width: 1024px) {
+  .projects .projects-contents {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+  }
+  .section-heading h1 {
+    font-size: 2.4em;
+  }
+  .projects-post .post-desc h2 {
+    font-size: 18px;
+  }
+  .CTA h1 {
+    font-size: 28px;
+  }
+}
+
+/* Mobile View */
+@media screen and (max-width: 768px) {
+  .projects .projects-contents {
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    padding: 2% 10px;
+  }
+  .section-heading h1 {
+    font-size: 2em;
+  }
+  .projects-post .post-desc h2 {
+    font-size: 16px;
+  }
+  .projects-post .post-desc p {
+    font-size: 14px;
+  }
+  .CTA h1 {
+    font-size: 24px;
+  }
+  .CTA p {
+    font-size: 16px;
+  }
+  .btn, .CTA-btn {
+    font-size: 0.9em;
+    padding: 8px 20px;
+  }
+}
+
+/* Small Mobile View */
+@media screen and (max-width: 480px) {
+  .section-heading h1 {
+    font-size: 1.8em;
+  }
+  .CTA h1 {
+    font-size: 20px;
+  }
+  .CTA p {
+    font-size: 14px;
+  }
+  .btn, .CTA-btn {
+    font-size: 0.8em;
+    padding: 8px 15px;
+  }
 }
