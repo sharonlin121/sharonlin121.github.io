@@ -508,28 +508,29 @@ body {
 
 @media (max-width: 768px) {
 	.nav-list {
-			flex-direction: column;
-			display: none;
-			background-color: #d1bfc5;
-			position: absolute;
-			top: 100%;
-			left: 0;
-			right: 0;
-			z-index: 100;
+		flex-direction: column;
+		display: none;
+		background-color: #d1bfc5;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		z-index: 100;
 	}
 
 	.nav-list.active {
-			display: flex;
+		display: flex;
 	}
 
 	.hamburger {
-			display: block;
-			cursor: pointer;
-			font-size: 2rem;
-			color: #2173a6;
+		display: block;
+		cursor: pointer;
+		font-size: 2rem;
+		color: #2173a6;
 	}
 }
 
 .hamburger {
-	display: none; /* Hidden by default */
+	display: none;
+	/* Hidden by default */
 }
