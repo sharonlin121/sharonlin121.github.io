@@ -60,7 +60,6 @@ body {
 
 
 .nav-btn {
-
 	color: rgb(8, 3, 3);
 	padding: 10px;
 	border-radius: 50px;
@@ -360,21 +359,7 @@ body {
 
 /*style footer end*/
 
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-	.contact-item {
-		flex: 1 1 100%;
-		/* Full width on smaller screens */
-	}
-
-	.section-heading h1 {
-		font-size: 1.8em;
-	}
-}
-
-
-
+/*style get in touch section*/
 
 .contact-item .icon {
 	font-size: 2em;
@@ -495,8 +480,82 @@ body {
 
 /* get in touch section end*/
 
-/*responsive*/
+/* Hamburger menu styles starts*/
+.hamburger {
+	display: none;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 30px;
+	height: 20px;
+	cursor: pointer;
+	background-color: #d1bfc5;
+	z-index: 1000;
+	border-radius: 5px;
+	border: none;
+}
+
+.hamburger div {
+	width: 100%;
+	height: 4px;
+	background-color: #b29da4;
+	border-radius: 3px;
+	transition: transform 0.3s, opacity 0.3s, background-color 0.3s;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.hamburger:hover {
+	transform: scale(1.1);
+}
+
+.hamburger i {
+	color: #2173a6;
+}
+
+
+/* Hamburger menu styles ends*/
+
+
+
+
+
 @media (max-width: 768px) {
+	.hamburger {
+		display: flex;
+	}
+
+	.nav-list {
+		display: none;
+		flex-direction: column;
+		position: absolute;
+		top: 60px;
+		right: 10px;
+		background-color: #d1bfc5;
+		padding: 10px;
+		border-radius: 5px;
+	}
+
+	.nav-list.show {
+		display: flex;
+	}
+
+	.nav-list li {
+		margin: 10px 0;
+	}
+
+	.contact-item {
+		flex: 1 1 100%;
+		/* Full width on smaller screens */
+	}
+
+	.contact-details {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.section-heading h1 {
+		font-size: 1.8em;
+	}
+
 	.contact-item {
 		flex: 1 1 100%;
 	}
@@ -504,12 +563,9 @@ body {
 	.section-heading h1 {
 		font-size: 2em;
 	}
-}
 
-@media (max-width: 768px) {
 	.nav-list {
 		flex-direction: column;
-		display: none;
 		background-color: #d1bfc5;
 		position: absolute;
 		top: 100%;
@@ -521,16 +577,6 @@ body {
 	.nav-list.active {
 		display: flex;
 	}
-
-	.hamburger {
-		display: block;
-		cursor: pointer;
-		font-size: 2rem;
-		color: #2173a6;
-	}
 }
 
-.hamburger {
-	display: none;
-	/* Hidden by default */
-}
+

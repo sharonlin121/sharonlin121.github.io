@@ -1,77 +1,104 @@
 <!DOCTYPE html>
 <html>
   <head>
-
     <link rel="stylesheet" href="assets/css/education.css" />
     <link rel="stylesheet" href="assets/css/homepage.css" />
-    
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"rel="stylesheet"/>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
 
     <title>Sharon Lin</title>
   </head>
   <body>
-      <!-- Education Section start-->
+    <!-- Education Section start-->
     <section class="education" id="education">
       <!-- Navbar starts-->
       <nav class="navbar">
         <div class="logo">
-          <a href="index1.html"><img src="assets/img/logo.png" alt="logo-sharon" /></a>
+          <a href="index.html"><img src="assets/img/logo.png" alt="logo-sharon" /></a>
         </div>
+        <button class="hamburger" aria-label="Toggle menu">
+          <i class="fa fa-bars"></i>
+        </button>
         <ul class="nav-list">
-          <li class="nav-btn"><a href="index1.html">Home</a></li>
+          <li class="nav-btn"><a href="index.html">Home</a></li>
           <li class="nav-btn"><a href="education.html">Education</a></li>
           <li class="nav-btn"><a href="experience.html">Experience</a></li>
           <li class="nav-btn"><a href="skills.html">Skills</a></li>
           <li class="nav-btn"><a href="project.html">Projects</a></li>
           <li class="contact-button">
-            <a href="https://www.linkedin.com/in/sharonlin121/" target="_blank">Contact Me</a>
+            <a href="https://www.linkedin.com/in/sharonlin121/" target="_blank">
+              Contact Me
+            </a>
           </li>
         </ul>
       </nav>
-            <!--   === Navbar Ends ===   -->
+      <!--   === Navbar Ends ===   -->
 
       <header class="section-heading">
         <h1>EDUCATION</h1>
       </header>
       <div class="education-contents">
         <div class="education-box">
-          <img src="assets/img/mcgill.png" alt="McGill University Logo" class="university-logo" />
+          <img
+            src="assets/img/mcgill.png"
+            alt="McGill University Logo"
+            class="university-logo"
+          />
           <h2>Master of Information Studies</h2>
           <h3>McGill University</h3>
           <h3>2023-2025</h3>
         </div>
         <div class="education-box">
-          <img src="assets/img/nycu.png" alt="National Chiao Tung University Logo" class="university-logo" />
+          <img
+            src="assets/img/nycu.png"
+            alt="National Chiao Tung University Logo"
+            class="university-logo"
+          />
           <h2>Bachelor of Business Administration</h2>
           <h3>National Chiao Tung University</h3>
           <h3>2019-2023</h3>
         </div>
       </div>
     </section>
-          <!-- Education Section end-->
+    <!-- Education Section end-->
 
-<!--   *** Certification Section Starts ***   -->
-<section class="certifications">
-  <header class="section-heading">
-    <h1>CERTIFICATIONS</h1>
-  </header>
-  <div class="certifications-list">
-    <div class="certification-item">
-      <img src="assets/img/powerbi.jpeg" alt="Power BI Certification" />
-      <h3>Microsoft Certified: Azure Power BI Data Analyst Certification</h3>
-    </div>
-    <div class="certification-item">
-      <img src="assets/img/alteryx.png" alt="Alteryx Certification" />
-      <h3>Alteryx Designer Core Certification</h3>
-    </div>
-  </div>
-</section>
+    <!--   *** Certification Section Starts ***   -->
+    <section class="certifications">
+      <header class="section-heading">
+        <h1>CERTIFICATIONS</h1>
+      </header>
+      <div class="certifications-list">
+        <div class="certification-item">
+          <img src="assets/img/powerbi.jpeg" alt="Power BI Certification" />
+          <h3>
+            Microsoft Certified: Azure Power BI Data Analyst Certification
+          </h3>
+        </div>
+        <div class="certification-item">
+          <img src="assets/img/alteryx.png" alt="Alteryx Certification" />
+          <h3>Alteryx Designer Core Certification</h3>
+        </div>
+      </div>
+    </section>
 
     <!--   *** Page Footer Starts ***   -->
     <section class="page-footer">
       <p>© 2024 Created by Sharon Lin. All rights reserved.</p>
     </section>
     <!--   *** Page Footer Ends ***   -->
+    
+    <!--   *** javascript for the hamburger menu for smaller screen***   -->
+        <script>
+          const hamburger = document.querySelector('.hamburger');
+          const navList = document.querySelector('.nav-list');
+        
+          hamburger.addEventListener('click', () => {
+            navList.classList.toggle('active');
+          });
+        </script>
+    <!--   *** javascript for the hamburger menu ends***   -->
   </body>
 </html>

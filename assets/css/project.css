@@ -8,11 +8,6 @@ section.projects {
   width: 100%;
   padding-left: 10px;
   padding-bottom: 18%;
-
-}
-
-.projects-post {
-  transition: transform 0.3s;
 }
 
 .projects-post:hover {
@@ -64,9 +59,6 @@ section.projects {
   padding: auto;
 }
 
-#projectborder {
-  border: 2px solid white;
-}
 
 .projects-post .post-desc h1 {
   margin-bottom: 8px;
@@ -188,12 +180,15 @@ section.projects {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 15px;
   }
+
   .section-heading h1 {
     font-size: 2.4em;
   }
+
   .projects-post .post-desc h2 {
     font-size: 18px;
   }
+
   .CTA h1 {
     font-size: 28px;
   }
@@ -206,22 +201,29 @@ section.projects {
     grid-gap: 10px;
     padding: 2% 10px;
   }
+
   .section-heading h1 {
     font-size: 2em;
   }
+
   .projects-post .post-desc h2 {
     font-size: 16px;
   }
+
   .projects-post .post-desc p {
     font-size: 14px;
   }
+
   .CTA h1 {
     font-size: 24px;
   }
+
   .CTA p {
     font-size: 16px;
   }
-  .btn, .CTA-btn {
+
+  .btn,
+  .CTA-btn {
     font-size: 0.9em;
     padding: 8px 20px;
   }
@@ -232,13 +234,17 @@ section.projects {
   .section-heading h1 {
     font-size: 1.8em;
   }
+
   .CTA h1 {
     font-size: 20px;
   }
+
   .CTA p {
     font-size: 14px;
   }
-  .btn, .CTA-btn {
+
+  .btn,
+  .CTA-btn {
     font-size: 0.8em;
     padding: 8px 15px;
   }
